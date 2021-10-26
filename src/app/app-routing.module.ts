@@ -29,7 +29,7 @@ const routes: Routes = [
   {
     path: 'admin',
     component: DashboardComponent,
-    canActivate: [AdminGuard],
+
     children:[
       {
         path: 'profile',
@@ -43,7 +43,7 @@ const routes: Routes = [
     path: 'user-dashboard',
     component: UserDashboardComponent,
     pathMatch:'full',
-    canActivate: [NormalGuard],
+  
   },
 ];
 
